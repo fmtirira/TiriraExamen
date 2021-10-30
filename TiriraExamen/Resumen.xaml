@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiriraExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Resumen de Inscripción" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
+            </Frame>
+
+            <Grid Margin="20,30,20,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario Conectado" />
+                <Label x:Name="lblUsuario" TextColor="Black"  HorizontalTextAlignment="Center" FontSize="15" Grid.Column="1"/>
+
+                <Label Text="Nombre Estudiante: " Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtNombre"  Grid.Row="1" Grid.Column="1" FontSize="15" IsReadOnly="True" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Pagos Mensuales: " Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtMensual" IsReadOnly="True" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Total a Pagar: " Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtTotal" IsReadOnly="True" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+               
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
